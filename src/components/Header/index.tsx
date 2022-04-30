@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Button } from "../Button";
 import { HeaderContainer } from "./styles";
 
 function Header(){
@@ -29,9 +30,9 @@ function Header(){
               <a>Patners</a>
             </Link>
           </li>
-          <li>
-            <button>sing up free</button>
-          </li>
+          <div className="buttonSing">
+            <Button textButton="sing up free" type="button-solid"/>
+          </div>
         </ul>
       </nav>
     </HeaderContainer>
