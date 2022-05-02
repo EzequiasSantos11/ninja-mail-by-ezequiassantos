@@ -25,6 +25,9 @@ export default class MyDocument extends Document {
         <Head>
           <title>NinjaMail</title>
           <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+          <link rel="preconnect" href="https://fonts.googleapis.com"/>
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+          <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@500;700;800&display=swap" rel="stylesheet"></link>
           {/* Step 5: Output the styles in the head  */}
           {this.props.styleTags}
         </Head>
