@@ -1,14 +1,12 @@
 import type { NextPage } from 'next'
 import { Button } from '../components/Button';
-import { Header } from "../components/Header";
 import { Container, Hero, Video, Cases, MemberArea, Partnership, GetStarted, Footer } from '../styles/Home';
 
 const Home: NextPage = () => {
   return (
     <Container>
-      <Header />
       <Hero>
-        <img src="/assets/herophoto.svg" alt="mulher mechendo no notebook" />
+        <img src="/assets/fotohero.png" alt="mulher mechendo no notebook" />
         <div className="textHero">
           <h2>Create Stunning Email Champaigns</h2>
           <p>Create and launch email campaigns that captivate your customers in just a few clicks.</p>
@@ -90,11 +88,11 @@ const Home: NextPage = () => {
         <h3>All the best brands
           already use us.</h3>
         <div className="logos">
-          <img src="/assets/Logo1.png" alt="" />
-          <img src="/assets/Logo2.png" alt="" />
-          <img src="/assets/Logo3.png" alt="" />
-          <img src="/assets/Logo4.png" alt="" />
-          <img src="/assets/Logo5.png" alt="" />
+          <img src="/assets/Logo1.png" className='first' alt="" />
+          <img src="/assets/Logo2.png" className='second' alt="" />
+          <img src="/assets/Logo3.png" className='third' alt="" />
+          <img src="/assets/Logo4.png" className='quarter' alt="" />
+          <img src="/assets/Logo5.png" className='fifth' alt="" />
         </div>
       </Partnership>
       <GetStarted>
@@ -104,31 +102,29 @@ const Home: NextPage = () => {
       <Footer>
         <div className='header'>
           <img src="/assets/logo.svg" alt="" />
-          <div className="sitemap">
-            <span>Feactures</span>
-            <span>Pricing</span>
-            <span>Services</span>
-            <span>Partners</span>
-          </div>
-          <div className="sitemap">
-            <span>About us</span>
-            <span>Tutorials</span>
-            <span>Resources</span>
-            <span>Help Center</span>
-            <span>Templates</span>
-            <span>Cases Studies</span>
-          </div>
-          <div className="sitemap">
-            <span>Medium</span>
-            <span>Twitter</span>
-            <span>Facebook</span>
-            <span>Instagram</span>
-            <span>Linkedin</span>
-          </div>
-          <div className="sitemap">
-            <span>Contact Us</span>
-            <span>Slack</span>
-            <span>Jobs</span>
+          <div className="wrapper">
+            <div className="sitemap">
+              <span>Feactures</span>
+              <span>Pricing</span>
+              <span>Services</span>
+              <span>Partners</span>
+              <span>About us</span>
+              <span>Tutorials</span>
+              <span>Resources</span>
+            </div>
+            <div className='sitemap'>
+              <span>Help Center</span>
+              <span>Templates</span>
+              <span>Cases Studies</span>
+              <span>Medium</span>
+              <span>Twitter</span>
+              <span>Facebook</span>
+              <span>Instagram</span>
+              <span>Linkedin</span>
+              <span>Contact Us</span>
+              <span>Slack</span>
+              <span>Jobs</span>
+            </div>
           </div>
         </div>
         <div className="footer">
@@ -137,9 +133,9 @@ const Home: NextPage = () => {
           <span>Privacy Policy</span>
         </div>
       </Footer>
-      <div className="background">
-        <img src="/assets/background.png" alt="" />
-      </div>
+      <img src="/assets/background.png" className='background' alt="" />
+      <img src="/assets/backgroundTablet.png" className='background backgroundTablet' alt="" />
+      <img src="/assets/backgroundMobile.png" className='background last backgroundMobile' alt="" />
     </Container >
   )
 }
