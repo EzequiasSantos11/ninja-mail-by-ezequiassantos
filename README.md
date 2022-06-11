@@ -31,9 +31,18 @@
 ## Quer implementar novas feactures?
 
 Siga essas etapas
-  * Crie um Fork deste projeto.
-  * Faça um clone na sua máquina local.
-  * Rode o comando [ yarn ] dentro do caminho do projeto no seu terminal e de enter.
-  * Logo em seguida se tudo ocorrer bem, digite também no terminal [ yarn dev ] e de enter.
-  * Agora é só usar a criatividade.
+
+1. Crie um fork desse projeto.
+2. Clone o repositório.
+3. Comece a codar :D
+4. A cada atualização envie seu commit
+```sh
+git add .
+git commit -m "comentário da sua atualização"
+```
+5. Envie para seu repositório
+```sh
+git push -u origin master
+```
+
 <br>
